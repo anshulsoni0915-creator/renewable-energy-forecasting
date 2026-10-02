@@ -1,14 +1,4 @@
----
-title: Renewable Energy Forecasting App
-emoji: ⚡
-colorFrom: yellow
-colorTo: purple
-sdk: gradio
-sdk_version: 6.29.1
-app_file: app.py
-pinned: false
-license: mit
----
+**Live demo:** https://huggingface.co/spaces/AnshulSoni0915/renewable-energy-forecasting-app
 
 # Renewable Energy Forecasting App
 
