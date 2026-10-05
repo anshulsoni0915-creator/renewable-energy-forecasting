@@ -1,4 +1,14 @@
-**Live demo:** https://huggingface.co/spaces/AnshulSoni0915/renewable-energy-forecasting-app
+---
+title: Renewable Energy Forecasting App
+emoji: ⚡
+colorFrom: yellow
+colorTo: purple
+sdk: gradio
+sdk_version: 6.29.1
+app_file: app.py
+pinned: false
+license: mit
+---
 
 # Renewable Energy Forecasting App
 
@@ -20,14 +30,15 @@ for the next 24 hours from weather conditions, with an interactive Gradio interf
 | RMSE   | _your value_ |
 
 ## Tech stack
-Python, TensorFlow/Keras, Scikit-Learn, NumPy, Matplotlib, Gradio, Open-Meteo API
+Python, TensorFlow/Keras, Scikit-Learn, NumPy, Plotly, Gradio, Open-Meteo API
 
 ## Features
-- **Live city forecast:** pulls the last 48 hours of real weather for any city (Open-Meteo) and forecasts the next 24 hours
-- **Scenario lab:** presets (clear summer day, windy front, overcast winter, mild spring day) or your own weather
+- **Modern dashboard:** dark glass-style UI with KPI cards (solar peak, wind, grid, renewable share, CO2 avoided) and interactive Plotly charts
+- **Live city forecast:** search any city; the app pulls the last 48 hours of real weather (Open-Meteo) and forecasts the next 24 hours
 - **Uncertainty bands:** 10th to 90th percentile range using Monte Carlo Dropout
-- **Plain-language advice:** best window for heavy loads or battery charging, steep solar-drop alerts, and a schedule-risk indicator
-- **What drives the forecast:** a sensitivity table showing how cloud, sunlight, wind and temperature change the output
+- **Energy scenarios:** "What if wind speed drops 25%?" simulator for wind, sunlight and cloud cover
+- **Plain-language advice:** best window for heavy loads or battery charging, steep solar-drop alerts, schedule-risk indicator
+- **Custom scenario builder:** presets or your own weather when you want to experiment
 
 ## Notes and limitations
 - The model was trained on real 48-hour sequences from one dataset, so it is not calibrated for every location.
